@@ -30,6 +30,12 @@ const Home = () => {
     }
   ];
 
+  const handleCallConversion = (phoneNumber: string) => {
+    const telUrl = `tel:${phoneNumber}`;
+    // @ts-ignore - gtag_report_conversion is defined in index.html
+    return window.gtag_report_conversion(telUrl);
+  };
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -47,6 +53,31 @@ const Home = () => {
               Experience the future of connectivity with SkyConnect's premium internet and TV packages 
               designed for modern living across the United States.
             </p>
+            
+            {/* Phone Numbers with Call to Queue */}
+            <div className="mb-8 space-y-4 animate-fade-in">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <div className="flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-lg px-6 py-3 shadow-lg">
+                  <span className="text-lg font-semibold text-gray-800">📞 +1 (818) 660-0126</span>
+                  <Button 
+                    onClick={() => handleCallConversion('+18186600126')}
+                    className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm"
+                  >
+                    Call to Queue
+                  </Button>
+                </div>
+                <div className="flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-lg px-6 py-3 shadow-lg">
+                  <span className="text-lg font-semibold text-gray-800">📞 +1 (952) 592-0128</span>
+                  <Button 
+                    onClick={() => handleCallConversion('+19525920128')}
+                    className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 text-sm"
+                  >
+                    Call to Queue
+                  </Button>
+                </div>
+              </div>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
               <Button asChild size="lg" className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-lg px-8 py-3">
                 <Link to="/packages">View Packages</Link>
