@@ -88,7 +88,7 @@ const Home = () => {
             <div className="mb-12 space-y-4">
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <div className="group flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-8 py-4 hover:bg-white/10 transition-all duration-500 hover:scale-105">
-                  <span className="text-xl font-semibold text-white">📞 +1 (818) 660-0126</span>
+                  <span className="text-xl font-semibold text-white">📞 +1(516) 619-1704</span>
                   <Button 
                     onClick={() => handleCallConversion('+18186600126')}
                     className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white px-6 py-2 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25"
@@ -98,7 +98,7 @@ const Home = () => {
                   </Button>
                 </div>
                 <div className="group flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-8 py-4 hover:bg-white/10 transition-all duration-500 hover:scale-105">
-                  <span className="text-xl font-semibold text-white">📞 +1 (952) 592-0128</span>
+                  <span className="text-xl font-semibold text-white">📞+1(513) 334-6758</span>
                   <Button 
                     onClick={() => handleCallConversion('+19525920128')}
                     className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white px-6 py-2 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25"
