@@ -98,7 +98,7 @@ const Home = () => {
                   </Button>
                 </div>
                 <div className="group flex items-center space-x-4 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-8 py-4 hover:bg-white/10 transition-all duration-500 hover:scale-105">
-                  <span className="text-xl font-semibold text-white">📞+1(513) 334-6758</span>
+                  <span className="text-xl font-semibold text-white">📞+1 (901) 878-9522</span>
                   <Button 
                     onClick={() => handleCallConversion('+19525920128')}
                     className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white px-6 py-2 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25"

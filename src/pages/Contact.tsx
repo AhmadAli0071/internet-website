@@ -88,7 +88,7 @@ const Contact = () => {
                         <h3 className="font-semibold text-gray-900 mb-1">Phone Numbers</h3>
                         <p className="text-gray-600">
                           Primary: +1(516) 619-1704<br />
-                          Secondary:+1(513) 334-6758
+                          Secondary:+1 (901) 878-9522
                         </p>
                       </div>
                     </div>
